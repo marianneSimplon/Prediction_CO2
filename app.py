@@ -21,8 +21,11 @@ st.title('Prédiction de l\'émission de CO2')
 
 
 def preprocessNaN(input):
+    # df = pd.read_csv(
+    #     r'.\data\model.csv', delimiter=',', decimal='.')
+
     df = pd.read_csv(
-        r'.\data\model.csv', delimiter=',', decimal='.')
+        os.path.join(os.getcwd(), 'model.csv'), delimiter=',', decimal='.')
 
     for col in input:
         # get dtype for column
