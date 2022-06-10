@@ -25,7 +25,7 @@ def preprocessNaN(input):
     #     r'.\data\model.csv', delimiter=',', decimal='.')
 
     df = pd.read_csv(
-        os.path.join(os.getcwd(), 'model.csv'), delimiter=',', decimal='.')
+        os.path.join(os.getcwd(), 'data', 'model.csv'), delimiter=',', decimal='.')
 
     for col in input:
         # get dtype for column
